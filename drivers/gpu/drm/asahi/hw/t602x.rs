@@ -2,9 +2,9 @@
 
 //! Hardware configuration for t600x (M1 Pro/Max/Ultra) platforms.
 
-use crate::f32;
-
 use super::*;
+
+use kernel::f32;
 
 const fn iomaps(chip_id: u32, mcc_count: usize) -> [Option<IOMapping>; 24] {
     [

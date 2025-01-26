@@ -11,13 +11,13 @@
 //! Many of these structures are poorly understood, so there are lots of hardcoded unknown values
 //! derived from observing the InitData structures that macOS generates.
 
-use crate::f32;
 use crate::fw::initdata::*;
 use crate::fw::types::*;
 use crate::{driver::AsahiDevice, gem, gpu, hw, mmu};
 use kernel::error::{Error, Result};
 use kernel::macros::versions;
 use kernel::prelude::*;
+use kernel::{f32, float::F32};
 use kernel::{init, init::Init, try_init};
 
 /// Builder helper for the global GPU InitData.

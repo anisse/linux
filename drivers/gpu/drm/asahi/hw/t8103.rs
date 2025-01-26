@@ -2,9 +2,9 @@
 
 //! Hardware configuration for t8103 platforms (M1).
 
-use crate::f32;
-
 use super::*;
+
+use kernel::f32;
 
 pub(crate) const HWCONFIG: super::HwConfig = HwConfig {
     chip_id: 0x8103,
